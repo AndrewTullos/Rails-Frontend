@@ -39,3 +39,8 @@ coverage/
 .eslintcache
 .DS_Store
 DS_Store
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
