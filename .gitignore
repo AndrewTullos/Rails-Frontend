@@ -37,3 +37,5 @@ coverage/
 # Misc
 .cache/
 .eslintcache
+.DS_Store
+DS_Store
