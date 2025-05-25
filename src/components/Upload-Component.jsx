@@ -56,7 +56,7 @@ export function UploadComponent({
 
 		formData.append("metadata", metadataBlob);
 
-		fetch("http://localhost:8080/api/v1/s3/upload", {
+		fetch("http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com//api/v1/s3/upload", {
 			method: "POST",
 			body: formData,
 		})

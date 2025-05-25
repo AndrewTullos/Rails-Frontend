@@ -32,7 +32,7 @@ export function SignupForm({
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
-		fetch("http://localhost:8080/api/user", {
+		fetch("http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

@@ -23,7 +23,7 @@ function Feed({ loggedInUser, setLoggedInUser }) {
 		const fetchAllFollowing = async () => {
 			try {
 				const response = await fetch(
-					`http://localhost:8080/api/follow/following/${userId}`
+					`http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/follow/following/${userId}`
 				);
 				if (response.ok) {
 					const data = await response.json();
@@ -47,7 +47,7 @@ function Feed({ loggedInUser, setLoggedInUser }) {
 			try {
 				const clips = following.map(async (follow) => {
 					const response = await fetch(
-						`http://localhost:8080/api/clip/user/${follow.following.userId}`
+						`http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/clip/user/${follow.following.userId}`
 					);
 					if (response.ok) {
 						return await response.json();
@@ -95,7 +95,7 @@ function Feed({ loggedInUser, setLoggedInUser }) {
 						<div key={clipId} className="w-full p-4">
 							<div className="border-2 rounded-2xl border-secondary p-4">
 								<Link
-									to={`http://localhost:5173/profile/${userProfile.userId}`}
+									to={`http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/profile/${userProfile.userId}`}
 								>
 									{" "}
 									<h1 className="text-2xl font-bold">{userProfile.username}</h1>

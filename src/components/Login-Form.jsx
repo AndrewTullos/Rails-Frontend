@@ -32,7 +32,7 @@ export function LoginForm({
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
-		fetch("http://localhost:8080/api/user/login", {
+		fetch("http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

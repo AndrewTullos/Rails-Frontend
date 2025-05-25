@@ -21,7 +21,7 @@ function FollowButton({ loggedInUser, setLoggedInUser }) {
 		const fetchFollower = async () => {
 			try {
 				const response = await fetch(
-					`http://localhost:8080/api/user/${userId}`
+					`http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/${userId}`
 				);
 
 				if (response.ok) {
@@ -48,7 +48,7 @@ function FollowButton({ loggedInUser, setLoggedInUser }) {
 		const fetchFollowing = async () => {
 			try {
 				const response = await fetch(
-					`http://localhost:8080/api/user/${profileId}`
+					`http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/${profileId}`
 				);
 
 				if (response.ok) {
@@ -73,7 +73,7 @@ function FollowButton({ loggedInUser, setLoggedInUser }) {
 		}
 
 		try {
-			const response = await fetch(`http://localhost:8080/api/follow`, {
+			const response = await fetch(`http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/follow`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
