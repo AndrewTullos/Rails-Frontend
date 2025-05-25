@@ -1,0 +1,39 @@
+# Node.js and npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Vite
+/dist/
+.vite/
+
+# Environments
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDEs and Editors
+.idea
+.idea/             # WebStorm project files
+*.iml              # WebStorm module files
+.vscode/           # VS Code
+.DS_Store          # macOS
+Thumbs.db          # Windows
+
+# Build artifacts
+build/
+coverage/
+
+# Misc
+.cache/
+.eslintcache
