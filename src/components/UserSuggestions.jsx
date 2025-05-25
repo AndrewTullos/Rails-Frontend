@@ -21,7 +21,7 @@ function UserSuggestions({ loggedInUser, setLoggedInUser }) {
 		const fetchUserData = async () => {
 			try {
 				const response = await fetch(
-					`http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/${userId}`
+					`https://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/${userId}`
 				);
 
 				if (response.ok) {
@@ -52,7 +52,7 @@ function UserSuggestions({ loggedInUser, setLoggedInUser }) {
 		const fetchSuggestedUsersByCity = async () => {
 			try {
 				const response = await fetch(
-					`http://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/all/${encodedCity}`
+					`https://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/all/${encodedCity}`
 				);
 
 				if (response.ok) {
