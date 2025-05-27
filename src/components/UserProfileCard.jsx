@@ -36,7 +36,7 @@ function UserProfileCard({ loggedInUser, setLoggedInUser }) {
 		const fetchUserData = async () => {
 			try {
 				const response = await fetch(
-					`https://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/${profileId}`
+					`http://54.219.96.255:8080/api/user/${profileId}`
 				);
 
 				if (response.ok) {

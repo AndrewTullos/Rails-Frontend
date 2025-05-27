@@ -22,7 +22,7 @@ function HeaderTwo({ loggedInUser, setLoggedInUser, children }) {
 		const fetchUserData = async () => {
 			try {
 				const response = await fetch(
-					`https://rails-app-social-env.eba-bgimm9si.us-west-1.elasticbeanstalk.com/api/user/${userId}`
+					`http://54.219.96.255:8080/api/user/${userId}`
 				);
 
 				if (response.ok) {
