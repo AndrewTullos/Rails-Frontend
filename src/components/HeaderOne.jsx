@@ -13,18 +13,18 @@ function HeaderOne() {
 					<span className="text-xl font-bold">Rails App</span>
 				</Link>
 				<nav className="hidden md:flex items-center gap-6 ">
-					<Link to="#features" className="text-sm font-medium hover:underline">
-						Features
-					</Link>
-					<Link
-						to="#testimonials"
-						className="text-sm font-medium hover:underline"
-					>
-						Testimonials
-					</Link>
-					<Link to="#pricing" className="text-sm font-medium hover:underline">
-						Pricing
-					</Link>
+					{/*<Link to="#features" className="text-sm font-medium hover:underline">*/}
+					{/*	Features*/}
+					{/*</Link>*/}
+					{/*<Link*/}
+					{/*	to="#testimonials"*/}
+					{/*	className="text-sm font-medium hover:underline"*/}
+					{/*>*/}
+					{/*	Testimonials*/}
+					{/*</Link>*/}
+					{/*<Link to="#pricing" className="text-sm font-medium hover:underline">*/}
+					{/*	Pricing*/}
+					{/*</Link>*/}
 				</nav>
 				<div className="flex items-center gap-4 ">
 					<Link to="/login" className="text-sm font-medium hover:underline">
