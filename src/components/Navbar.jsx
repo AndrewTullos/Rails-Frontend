@@ -48,7 +48,7 @@ export default function Navbar({ loggedInUser, setLoggedInUser, children }) {
 		const fetchUserData = async () => {
 			try {
 				const response = await fetch(
-					`http://54.219.96.255:8080/api/user/${userId}`
+					`https://skaterodeo.com/api/user/${userId}`
 				);
 
 				if (response.ok) {

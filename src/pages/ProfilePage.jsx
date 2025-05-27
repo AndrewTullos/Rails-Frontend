@@ -30,7 +30,7 @@ function ProfilePage({ className, loggedInUser, setLoggedInUser }) {
 		const fetchUserProfile = async () => {
 			try {
 				const response = await fetch(
-					`http://54.219.96.255:8080/api/user/${profileId}`
+					`https://skaterodeo.com/api/user/${profileId}`
 				);
 				if (response.ok) {
 					const data = await response.json();
@@ -55,7 +55,7 @@ function ProfilePage({ className, loggedInUser, setLoggedInUser }) {
 		const fetchUserClips = async () => {
 			try {
 				const response = await fetch(
-					`http://54.219.96.255:8080/api/clip/user/${profileId}`
+					`https://skaterodeo.com/api/clip/user/${profileId}`
 				);
 				if (response.ok) {
 					const data = await response.json();

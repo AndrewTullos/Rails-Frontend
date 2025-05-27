@@ -56,7 +56,7 @@ export function UploadComponent({
 
 		formData.append("metadata", metadataBlob);
 
-		fetch("http://54.219.96.255:8080/api/v1/s3/upload", {
+		fetch("https://skaterodeo.com/api/v1/s3/upload", {
 			method: "POST",
 			body: formData,
 		})

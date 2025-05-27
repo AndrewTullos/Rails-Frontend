@@ -32,7 +32,7 @@ export function LoginForm({
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
-		fetch("http://54.219.96.255:8080/api/user/login", {
+		fetch("https://skaterodeo.com/api/user/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

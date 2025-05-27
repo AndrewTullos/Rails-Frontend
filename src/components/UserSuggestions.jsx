@@ -21,7 +21,7 @@ function UserSuggestions({ loggedInUser, setLoggedInUser }) {
 		const fetchUserData = async () => {
 			try {
 				const response = await fetch(
-					`http://54.219.96.255:8080/api/user/${userId}`
+					`https://skaterodeo.com/api/user/${userId}`
 				);
 
 				if (response.ok) {
@@ -52,7 +52,7 @@ function UserSuggestions({ loggedInUser, setLoggedInUser }) {
 		const fetchSuggestedUsersByCity = async () => {
 			try {
 				const response = await fetch(
-					`http://54.219.96.255:8080/api/user/all/${encodedCity}`
+					`https://skaterodeo.com/api/user/all/${encodedCity}`
 				);
 
 				if (response.ok) {

@@ -21,7 +21,7 @@ function FollowButton({ loggedInUser, setLoggedInUser }) {
 		const fetchFollower = async () => {
 			try {
 				const response = await fetch(
-					`http://54.219.96.255:8080/api/user/${userId}`
+					`https://skaterodeo.com/api/user/${userId}`
 				);
 
 				if (response.ok) {
@@ -48,7 +48,7 @@ function FollowButton({ loggedInUser, setLoggedInUser }) {
 		const fetchFollowing = async () => {
 			try {
 				const response = await fetch(
-					`http://54.219.96.255:8080/api/user/${profileId}`
+					`https://skaterodeo.com/api/user/${profileId}`
 				);
 
 				if (response.ok) {
@@ -73,7 +73,7 @@ function FollowButton({ loggedInUser, setLoggedInUser }) {
 		}
 
 		try {
-			const response = await fetch(`http://54.219.96.255:8080/api/follow`, {
+			const response = await fetch(`https://skaterodeo.com/api/follow`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
