@@ -63,6 +63,16 @@ export function SignupForm({
 			className={cn("flex flex-col gap-6 text-white", className)}
 			{...props}
 		>
+			<div className="grid gap-2 flex-1">
+				{errors.length > 0 && (
+					<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+						<ul className="list-disc list-inside space-y-1">
+							{errors.map((error, index) => (
+								<li key={index}>{error}</li>
+							))}
+						</ul>
+					</div>
+				)}
 			<div className="flex flex-col items-center gap-2 text-center">
 				<h1 className="text-2xl font-bold">Register your account</h1>
 				<p className="text-balance text-sm text-muted-foreground">
@@ -85,16 +95,7 @@ export function SignupForm({
 
 				<div className="flex gap-4">
 					{" "}
-					<div className="grid gap-2 flex-1">
-						{errors.length > 0 && (
-							<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-								<ul className="list-disc list-inside space-y-1">
-									{errors.map((error, index) => (
-										<li key={index}>{error}</li>
-									))}
-								</ul>
-							</div>
-						)}
+
 
 						{" "}
 						<Label htmlFor="firstName">First Name</Label>
