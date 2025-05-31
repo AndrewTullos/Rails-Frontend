@@ -146,21 +146,21 @@ export default function Navbar({ loggedInUser, setLoggedInUser, children }) {
 				{/* <MountainIcon className="h-6 w-6" /> */}
 			</Link>
 			<nav className="ml-auto hidden lg:flex gap-6">
-				<div className="relative hidden md:block">
-					<Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-					<Input
-						type="search"
-						placeholder="Search clips..."
-						className="w-[200px] pl-8 md:w-[300px] lg:w-[400px]"
-					/>
-				</div>
+				{/*<div className="relative hidden md:block">*/}
+				{/*	<Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />*/}
+				{/*	<Input*/}
+				{/*		type="search"*/}
+				{/*		placeholder="Search clips..."*/}
+				{/*		className="w-[200px] pl-8 md:w-[300px] lg:w-[400px]"*/}
+				{/*	/>*/}
+				{/*</div>*/}
 				<ModeToggle />
-				<Button variant="outline" size="icon" className="relative bg-primary">
-					<Bell stroke="white" className="h-5 w-5" />
-					<span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] text-primary-foreground">
-						3
-					</span>
-				</Button>
+				{/*<Button variant="outline" size="icon" className="relative bg-primary">*/}
+				{/*	<Bell stroke="white" className="h-5 w-5" />*/}
+				{/*	<span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] text-primary-foreground">*/}
+				{/*		3*/}
+				{/*	</span>*/}
+				{/*</Button>*/}
 
 				{/* NEW CLIP */}
 				<Button
