@@ -154,7 +154,7 @@ export default function Navbar({ loggedInUser, setLoggedInUser, children }) {
 				{/*		className="w-[200px] pl-8 md:w-[300px] lg:w-[400px]"*/}
 				{/*	/>*/}
 				{/*</div>*/}
-				<ModeToggle />
+				{/*<ModeToggle />*/}
 				{/*<Button variant="outline" size="icon" className="relative bg-primary">*/}
 				{/*	<Bell stroke="white" className="h-5 w-5" />*/}
 				{/*	<span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] text-primary-foreground">*/}
